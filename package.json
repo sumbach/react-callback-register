@@ -1,0 +1,32 @@
+{
+  "name": "react-callback-register",
+  "version": "0.1.0",
+  "description": "Higher order component to merge callbacks from props, your component, and decorators.",
+  "main": "lib/callbackRegister.js",
+  "scripts": {
+    "compile": "babel --stage 0 -d lib/ src/",
+    "prepublish": "npm run compile"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamesknelson/react-base.git"
+  },
+  "keywords": [
+    "react",
+    "component",
+    "decorator",
+    "decorators",
+    "callbacks",
+    "callback",
+    "props"
+  ],
+  "author": "James K Nelson <james@jamesknelson.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jamesknelson/react-callback-register/issues"
+  },
+  "homepage": "https://github.com/jamesknelson/react-callback-register#readme",
+  "dependencies": {
+    "invariant": "^2.1.0"
+  }
+}

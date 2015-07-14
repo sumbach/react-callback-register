@@ -106,7 +106,7 @@ Seeing `@callbackRegister.on` must be run on an ES2015 class method, it can only
 Example (taken from [react-base-control](https://github.com/jamesknelson/react-base-control)):
 
 ```
-TargeComponent.on(['mouseDown', 'touchStart'], function(e) {
+DecoratedComponent.on(['mouseDown', 'touchStart'], function(e) {
   if (e.button === 0 || e.button === undefined) {
     this.start(e)
   }

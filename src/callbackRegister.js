@@ -16,12 +16,10 @@ function propFnFactory(name) {
       this.props[name](e, ...args)
     }
 
-    if (e.defaultPrevented) {
-      return
-    }
-
-    for (const fn of fn[callbackArray]) {
-      fn.call(this, e, ...args)
+    if (!e.defaultPrevented) {
+      for (const fn of fn[callbackArray]) {
+        fn.call(this, e, ...args)
+      }
     }
   }
 

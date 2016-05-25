@@ -136,7 +136,7 @@ export default class Target extends Component {
   }
 
   @callbackRegister.on('touchStart')
-  activate() {
+  activate(e) {
     this.props.activate(e)
   }
 
